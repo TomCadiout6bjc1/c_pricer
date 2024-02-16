@@ -1,0 +1,155 @@
+ \documentclass[11pt,a4paper]{article}
+
+%====================== PACKAGES ======================
+
+\usepackage[french]{babel}
+\usepackage{charter}
+\usepackage[utf8x]{inputenc}
+\usepackage{lastpage}
+%pour gérer les positionnement d'images
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+%pour les informations sur un document compilé en PDF et les liens externes / internes
+\usepackage{hyperref}
+%pour la mise en page des tableaux
+\usepackage{array}
+\usepackage{tabularx}
+%pour utiliser \floatbarrier
+%\usepackage{placeins}
+%\usepackage{floatrow}
+%espacement entre les lignes
+\usepackage{setspace}
+%modifier la mise en page de l'abstract
+\usepackage{abstract}
+%police et mise en page (marges) du document
+\usepackage[T1]{fontenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%Pour les galerie d'images
+\usepackage{subfig}
+%Pour les tirets stylisé (itemize)
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+  
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+\usepackage[maxnames=15, sorting=nty]{biblatex}
+\addbibresource{bibliographie.bib}
+
+%Pour le code
+\usepackage{tcolorbox,listings}
+\usepackage{fullpage}
+\usepackage{color}
+ 
+\definecolor{darkWhite}{rgb}{0.94,0.94,0.94}
+ 
+\lstset{
+    backgroundcolor=\color{darkWhite},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{red},
+    deletekeywords={...},
+    escapeinside={\%*}{*)},
+    extendedchars=true,
+    keepspaces=true,
+    keywordstyle=\color{blue},
+    language=python,
+    morekeywords={*,...},
+    numbers=left,
+    numbersep=10pt,
+    numberstyle=\tiny\color{black},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    stepnumber=1,
+    stringstyle=\color{gray},
+    tabsize=4,
+    title=\lstname,
+}
+
+%====================== INFORMATION ET RÈGLES ======================
+
+%rajouter les numérotation pour les \paragraphe et \subparagraphe
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}
+
+\hypersetup{							% Information sur le document
+pdfauthor = {Premier Auteur,
+			Deuxième Auteur,
+			Troisième Auteur,
+    		Quatrième Auteur,
+    		Cinquième Auteur,
+    		Sixième Auteur},			% Auteurs
+pdftitle = {Nom du Projet -
+			Sujet du Projet},			% Titre du document
+pdfsubject = {Mémoire de Projet},		% Sujet
+pdfkeywords = {Tag1, Tag2, Tag3, ...},	% Mots-clefs
+pdfstartview={FitH}}					% ajuste la page à la largeur de l'écran
+
+
+\usepackage{xcolor}
+
+%======================== DÉBUT DU DOCUMENT ========================
+
+\begin{document}
+
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\blue}{\color{blue}}
+\newcommand{\red}{\color{red}}
+\newcommand{\black}{\color{black}}
+\newcommand{\orange}{\color{orange}}
+\newcommand{\green}{\color{green}}
+
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%page de garde
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because only works if a paragraph has started.
+\includegraphics[width=0.15\textwidth]{logo.jpg}~\\[1cm]
+
+% Title
+\HRule \\[0.4cm]
+
+{
+\bfseries 
+\huge{C++ Pricer} \\[0.4cm]
+\LARGE{Exotic products and derivatives}\\[0.4cm]}
+\HRule \\[0.5cm]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\textsc{Gourio} Charles-Auguste\\
+
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\textsc charlesaugustegourio@gmail.com\\
+\end{flushright}
+\end{minipage}
+
+
+% Bottom of the page
+\vspace{0.5 in }
+{\large 2024}
+
+\end{center}
+\end{titlepage}
+\end{document}

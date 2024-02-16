@@ -1,0 +1,7 @@
+furo
+sphinx==5.2.3
+sphinx-last-updated-by-git
+sphinx-view
+sphinx_inline_tabs
+sphinxcontrib.mermaid
+sphinx-copybutton
