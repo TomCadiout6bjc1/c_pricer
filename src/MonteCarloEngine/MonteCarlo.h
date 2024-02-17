@@ -13,5 +13,4 @@ private:
 	size_t _number_simulations;
 	const PathSimulator* _path_simulator_ptr;
 	const Payoff* _payoff_ptr;
-
 };

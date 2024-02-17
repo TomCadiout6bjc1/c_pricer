@@ -6,6 +6,8 @@ set(LIBRARY_DESCRIPTION "C++ pricer - ENPC")
 
 project(${LIBRARY_NAME} VERSION ${LIBRARY_VERSION} DESCRIPTION ${LIBRARY_DESCRIPTION})
 
+add_executable(run test/main.cpp)
+
 target_include_directories(${LIBRARY_NAME} PRIVATE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/${LIBRARY_NAME}>
     $<INSTALL_INTERFACE:include/${LIBRARY_NAME}>
