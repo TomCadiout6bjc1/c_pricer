@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
+set(CMAKE_CXX_STANDARD 20)
 
 set(LIBRARY_NAME IOlib)
 set(LIBRARY_VERSION "1.0.1")
